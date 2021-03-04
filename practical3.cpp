@@ -18,16 +18,15 @@ cin>>m;
 cout<<"enter the power"<<" ";
 cin>>n;
 
-if (n==0){
+
 	
 	res=power(m);
-	cout<<"result is"<<" "<<res<<endl;
-}
-else{
+	cout<<"result with default power is"<<" "<<res<<endl;
+
 	
 	res = power(m,n);
-	cout<<"result is"<<" "<<res<<endl;
-}
+	cout<<"result with power"<<" "<<n<<" "<<"is"<<" "<<res<<endl;
+
  return 0;
 	
 }
