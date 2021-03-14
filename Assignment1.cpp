@@ -5,6 +5,18 @@
 using namespace std;
 
 int n;
+void display(int n);
+int factorial(int x);
+
+
+int main(){
+	
+     cout<<"enter a positive number"<<" ";
+     cin>>n;
+     display(n);
+
+return 0;
+}
 
 int factorial(int x){
 	if(x>0){
@@ -13,14 +25,9 @@ int factorial(int x){
 		
 	else
 	return 1;
-
-}
-
-int main(){
+	}
 	
-     cout<<"enter a positive number"<<" ";
-     cin>>n;
-     cout <<"Factorial of"<<" "<<n<<" "<<"is"<<" "<<factorial(n)<<endl;
-
-return 0;
-}
+void display(int n){
+	cout <<"Factorial of"<<" "<<n<<" "<<"is"<<" "<<factorial(n)<<endl;
+}	
+	
