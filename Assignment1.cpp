@@ -3,13 +3,17 @@
 
 #include<iostream>
 using namespace std;
-
-int fact(int x){
-	if(x>1){
-		return x*fact(x-1);
+char in;
+int factorial(int x){
+	if(x>0){
+		return x*factorial(x-1);
 			}
-	 else 
-	return 1;		
+	 else if (x=0)
+	return 1;
+	
+	else{
+		return in ;
+	}		
 	
 }
 
@@ -17,7 +21,7 @@ int main(){
      int n;
      cout<<"enter a positive number"<<" ";
      cin>>n;
-     cout <<"Factorial of"<<" "<<n<<" "<<"is"<<" "<<fact(n)<<endl;
+     cout <<"Factorial of"<<" "<<n<<" "<<"is"<<" "<<factorial(n)<<endl;
      
      return 0;
 }
